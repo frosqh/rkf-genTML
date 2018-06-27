@@ -83,7 +83,7 @@ genTex = Target(
     # comments = "Some Comments",
     # internal_name = "spam",
 
-    script="genTex.py", # path of the main script
+    script="HTMLGenerator.py", # path of the main script
 
     # Allows to specify the basename of the executable, if different from 'genTex'
     dest_base = "HTML Generator",

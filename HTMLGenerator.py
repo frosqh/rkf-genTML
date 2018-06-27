@@ -9,7 +9,7 @@ import time
 import webbrowser
 import xlrd
 
-from colorama improt Fore, Style, Init
+from colorama import Fore, Style, init
 
 CRLF = '\r\n'
 
@@ -31,7 +31,7 @@ try:
 	p="Récupération des données depuis le classeur xls "
 	print(p,end='')
 	workbook=xlrd.open_workbook("../Classeur1.xls",encoding_override="cp1252")
-	l=["Niveau de Gamme","Famille","Produit","Forme","TailleDimension","Tissage","Matière","Garnissage","Grammage","Coloris","Spécificitésé","Confectionneurs"]
+	l=["Niveau de Gamme","Famille","Produit","Forme","TailleDimension","Tissage","Matière","Garnissage","Grammage","Coloris","Spécificités","Confectionneurs"]
 	m=[]
 	c=0
 	for s in l:
@@ -58,20 +58,20 @@ try:
 	with codecs.open("../template.html","rb",encoding="utf-8") as f:data=f.readlines()
 	with codecs.open("../output.html","w",encoding="utf-8") as f:
 		for d in data:
-			if "%tabular%" in p:
+			if "%tabular%" in d:
 				overwrite(t,c,len(l))
 				ra=r.random()*0.25
 				time.sleep(ra)
 				k=m[c]
 				for s in k:f.write('\t'+s)
 				c+=1
-			else: f.write(p[:-1])
+			else: f.write(d[:-1])
 		f.write('>')
 	print(CRLF)
 	print("Rendu complété, ficier généré : "+Fore.BLUE+"../output.html"+Style.RESET_ALL)
 	os.system("pause")
 	webbrowser.open("../output.html")
 except Exception as e:
-	print(CRLF+CRLF+Fore.Red+'Error : '+str(e))
+	print(CRLF+CRLF+Fore.RED+'Error : '+str(e))
 	os.system("pause")
 	exit(-1)
