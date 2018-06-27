@@ -1,0 +1,81 @@
+.pre-header {
+	background: blue;
+	background: rgba(255,255,255,11);
+	height:100px;
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	line-height : 100px;
+	white-space: nowrap;
+	display: block;
+	z-index: 20;
+}
+
+.txt {
+	font-family: 'Roboto', sans-serif;
+	padding-left : 100px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin:10px;
+	font-size: 15pt
+}
+
+.content{
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	padding-top: 100px;
+	font-size: 9pt;
+}
+
+.title {
+	font-size: 20pt;
+}
+
+.subtitle {
+	font-size: 18pt;
+}
+
+.num{
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: 
+}
+
+.toc{
+	font-size: 11pt;
+}
+
+.toc h1{
+	font-size: 14pt;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+table{
+	border-collapse: collapse;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+
+}
+
+tr {
+	font-family: 'Inconsolata', sans-serif;
+	border-left : 1px solid black;
+	border-right: 1px solid black;
+}
+
+th {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.anchor {
+	position: relative;
+	top: -100px;
+	visibility: hidden;
+}

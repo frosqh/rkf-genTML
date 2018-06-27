@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+	<title>Nomenclature Article</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="template.css" media="all">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<a href="#title">
+		<div class="pre-header">
+			<img src="http://rkf.fr/logo.png" height="100" width="100">
+			<div class="txt">RKF Luxury Linen</div>
+		</div>
+	</a>
+	<div class="content">
+		<a id="title" class="anchor">.</a>
+		<div class="title">
+			<center>
+				Documentation
+				<br>
+				<div class="subtitle">
+					Nomenclature article
+				</div>
+			</center>
+		</div>
+		<div class="toc">
+			<h1>Table des matières</h1>
+			<span class="num">1</span> <a href="#intro">Introduction</a> <br>
+			<span class="num">2</span> <a href="#gamme">Gamme</a> <br>
+			<span class="num">3</span> <a href="#year">Année</a> <br>
+			<span class="num">4</span> <a href="#famille">Famille</a> <br>
+			<span class="num">5</span> <a href="#article">Article</a> <br>
+			<span class="num">6</span> <a href="#forme">Forme</a> <br>
+			<span class="num">7</span> <a href="#dim">Taille et Dimensions</a> <br>
+			<span class="num">8</span> <a href="#tissage">Tissage</a> <br>
+			<span class="num">9</span> <a href="#matiere">Matière</a> <br>
+			<span class="num">10</span> <a href="#garnissage">Garnissage</a> <br>
+			<span class="num">11</span> <a href="#grammage">Grammage</a> <br>
+			<span class="num">12</span> <a href="#coloris">Coloris</a> <br>
+			<span class="num">13</span> <a href="#spec">Spécificités</a> <br>
+			<span class="num">14</span> <a href="#conf">Confectionneurs</a> <br>
+			<span class="num">15</span> <a href="#conc">Conclusion</a> <br>
+		</div>
+
+		<a id="intro" class="anchor">.</a>
+		<div class="partie">
+			<h1>Introduction</h1>
+			La nomenclature produit présentée dans ce document correspond à un code produit composée d'au moins 24 caractères du "pool" suivant : [a-Z][0-9][-][*][/].<br>
+
+			Quelques conventions sont également à noter avant de commencer à détailler l'utilisation de la nomenclature.<br>
+
+			Chaque valeur 'Autres' correspond à une valeur non existante en base de données qui sera spécifiée dans la description de l'article. Elle apparaîtra comme une suite de tiret (-).<br>
+		</div>
+
+		<a id="gamme" class="anchor">.</a>
+		<div class="partie">
+			<h1>Gamme</h1>
+			Le premier champ à être inclus dans la nomenclature est la gamme de l'article. Elle se code sur un seul caractère et d'après la table ci-dessous.<br><br>
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+		</div>
+
+		<a id="year" class="anchor">.</a>
+		<div class="partie">
+			<h1>Année</h1>
+			Le second champ à être inclus dans la nomenclature est l'année correspondante à l'article. Elle se code sur trois caractères suivant une règle simple: <tt>2abc &rarr; abc</tt>. Si l'année n'est pas définie, le code <tt>N/A</tt> sera utilisée.
+		</div>
+
+		<a id="famille" class="anchor">.</a>
+		<div class="partie">
+			<h1>Famille</h1>
+			Le troisième champ à être inclus dans la nomenclature est la famille de l'article Elle se code sur deux caractères et selon ce tableau.<br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+			<br><br>
+			Ici, les codes sont créés à partir de deux lettres importantes du label de la famille, que l'on sauvegarde en majuscules. À l'avenir, il sera possible d'utiliser des lettres minuscules ou des chiffres si les possibilités se limitent trop.
+		</div>
+
+		<a id="article" class="anchor">.</a>
+		<div class="partie">
+			<h1>Article</h1>
+			Le quatrième champ correspond à la désignation de l'article. Elle se code sur deux caractères et d'après le tableau suivant.<br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+			<br><br>
+			Ici, les codes sont généralement créés à partir de chaque désignation d'article. Pour accéder à plus de possibilités, (3843 au lieu de 1295), il est également possible de mixer majuscules et minuscules.
+		</div>
+
+		<a id="forme" class="anchor">.</a>
+		<div class="partie">
+			<h1>Forme</h1>
+			Le sixième champ correspond à la forme de l'article, si elle est spécifiée, et '--' sinon. On retrouve les correspondances dans la table ci-dessous : <br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+		</div>
+
+		<a id="dim" class="anchor">.</a>
+		<div class="partie">
+			<h1>Taille et Dimensions</h1>
+			Le septième champ correspond à la taille ou aux dimensions de l'article. Le coden codé sur quatre caractères, se calcule selon une méthode définie à la suite de la table de conversion ci-dessous.<br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+			<br><br>
+			Comme annoncé précédememnt, on utilise la méthode ci-dessous pour cacluler le code.<br><br>
+
+			<tt>
+				<b>Entrée : </b> Le label S à coder <br>
+				<b>Sortie : </b> Le code correspondant <br>
+				<b>debut</b> <br>
+				&emsp; <b>si</b> S <b>est de la forme</b> "AxB" <b>avec</b> A:entier et B:entier <br>
+				&emsp;&emsp; sA &larr; base36(A) <br>
+				&emsp;&emsp; sB &larr; base36(B) <br>
+				&emsp;&emsp; <b>retourne</b> sA+sB <br>
+				&emsp; <b>si</b> S <b>est de la forme</b> "ADB" <b>avec</b> A:entier et B:entier <br>
+				&emsp;&emsp; sA &larr; base36(A) <br>
+				&emsp;&emsp; sB &larr; base36(B) <br>
+				&emsp;&emsp; <b>retourne</b> sA+"+"+sB <br>
+				&emsp; <b>si</b> S <b>est</b> "Autres" <br>
+				&emsp;&emsp; <b>retourne</b> "----" <br>
+				&emsp;<b>retourne</b> abbr(S) <br>
+				<b>fin</b> <br>
+			</tt>
+		</div>
+
+		<a id="tissage" class="anchor">.</a>
+		<div class="partie">
+			<h1>Tissage</h1>
+			Le huitième champ correspond au type de tissage choisi. Il est codé sur un seul caractère et une table de conversion peut être trouvée ci-dessous.<br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+		</div>
+
+
+		<a id="matiere" class="anchor">.</a>
+		<div class="partie">
+			<h1>Matière</h1>
+			Le neuvième champ correspond à la matière utilisée. Codée sur deux caractères, la correspondance désignation/code peut être trouvée ci-dessous.<br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+		</div>
+
+
+		<a id="garnissage" class="anchor">.</a>
+		<div class="partie">
+			<h1>Garnissage</h1>
+			Le dixième champ correspond au garnissage choisi, lorsqu'il y en a un. Dans le cas contraire, '-' sera utilisé. La table de conversion peut être trouvé ci-après.<br><br>
+
+			<center>
+					<table>
+						<tr>
+							<th>Désignation</th>
+							<th>Code</th>
+						</tr>
+						%tabular%
+					</table>
+				</center>
+		</div >
+
+		<a id="grammage" class="anchor">.</a>
+		<div class="partie">
+			<h1>Grammage</h1>
+			Le onzième champ correspond au grammage utilisé. Il est codé sur trois caractères à partir de la conversion en base36 du grammage en g/m². Les conversions déjà calculées sont enregistrées dans le tableau ci-dessous.<br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+		</div>
+
+		<a id="coloris" class="anchor">.</a>
+		<div class="Coloris">
+			<h1>Coloris</h1>
+			Le douzième champ correspond au coloris choisi. Il est codé sur deux caractères d'après les informations suivantes :<br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+		</div>
+
+		<a id="spec" class="anchor">.</a>
+		<div class="partie">
+			<h1>Spécificités</h1>
+			À partir du treizième champ et jusqu'à l'astérisque (*) se situent les différentes spécificités du produit. Elles sont codées sur deux caractères, d'après le tableau :<br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+
+		</div>
+
+		<a id="conf" class="anchor">.</a>
+		<div class="partie">
+			<h1>Confectionneurs</h1>
+			De l'astérisque jusqu'à la fin du code se situent les différents confectionneurs intervenant sur le produit. Codé sur deux caractères, les conversions sont données dans la table ci-dessous : <br><br>
+
+			<center>
+				<table>
+					<tr>
+						<th>Désignation</th>
+						<th>Code</th>
+					</tr>
+					%tabular%
+				</table>
+			</center>
+
+		</div>
+
+		<a id="conc" class="anchor">.</a>
+		<div class="partie">
+			<h1>Conclusion</h1>
+			En mettant bout à bout les différents codes, on obtient un code article final théorique d'au moins 24 caractères (sans spécificités ni confectionneurs). <br><br>
+
+			Le code ainsi obtenu se décompose de la manière suivante :
+			<tt>g<sub>1</sub>a<sub>1</sub>a<sub>2</sub>a<sub>3</sub>f<sub>1</sub>f<sub>2</sub>p<sub>1</sub>p<sub>2</sub>o<sub>1</sub>o<sub>2</sub>d<sub>1</sub>d<sub>2</sub>d<sub>3</sub>d<sub>4</sub>t<sub>1</sub>e<sub>1</sub>e<sub>2</sub>n<sub>1</sub>m<sub>1</sub>m<sub>2</sub>m<sub>3</sub>c<sub>1</sub>c<sub>2</sub>s<sub>1</sub>s<sub>2</sub>...*r<sub>1</sub>r<sub>2</sub>...</tt>
+
+			avec les correspondances suivantes :
+
+			<center>
+				<table>
+					<tr>
+						<th>Lettre</th>
+						<th>Catégorie</th>
+					</tr>
+					
+					<tr>
+						<td>g</td>
+						<td>Gamme</td>
+					</tr>
+
+					<tr>
+						<td>a</td>
+						<td>Année</td>
+					</tr>
+
+					<tr>
+						<td>f</td>
+						<td>Famille</td>
+					</tr>
+
+					<tr>
+						<td>p</td>
+						<td>Produit</td>
+					</tr>
+
+					<tr>
+						<td>o</td>
+						<td>Forme</td>
+					</tr>
+
+					<tr>
+						<td>d</td>
+						<td>Taille et Dimensions</td>
+					</tr>
+
+					<tr>
+						<td>t</td>
+						<td>Tissage</td>
+					</tr>
+
+					<tr>
+						<td>e</td>
+						<td>Matière</td>
+					</tr>
+
+					<tr>
+						<td>n</td>
+						<td>Garnissage</td>
+					</tr>
+
+					<tr>
+						<td>m</td>
+						<td>Grammage</td>
+					</tr>
+
+					<tr>
+						<td>c</td>
+						<td>Coloris</td>
+					</tr>
+
+					<tr>
+						<td>s</td>
+						<td>Spécificités</td>
+					</tr>
+
+					<tr>
+						<td>r</td>
+						<td>Confectionneurs</td>
+					</tr>
+				</table>
+			</center>
+		</div>
+	</div>
+	<script>
+	var anchorlist = ["title","intro","gamme","year","famille","article","forme","dim","tissage","matiere","garnissage","grammage","coloris","spec","conf","conc"]
+
+	var lastScrollTop = 0;
+	window.addEventListener("scroll", function(){
+		var st = window.pageYOffset || document.documentElement.scrollTop;
+		lastScrollTop = st <=0 ? 0 : st;
+	},false);
+
+	window.onkeyup = function(e){
+		var key = e.keyCode?e.keyCode:e.which;
+
+		if (key==39){
+			scroll(1);
+		} else if (key==37){
+			scroll(0);
+		}
+	}
+
+	function scrollToAnchor(aid){
+		console.log(aid);
+		var aTag = $("a[id='"+aid+"']");
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	}
+
+	function scroll(dir){
+		var a = window.pageYOffset;
+		index = -1;
+		var onIt = false;
+		var c=0;
+		for (var i in anchorlist){
+			var aTag = $("a[id='"+anchorlist[i]+"']");
+			if (aTag.offset().top>a){
+				if (Math.abs(aTag.offset().top-a)>1){
+					index = c;
+					break;
+				} else {
+					onIt=true
+				}
+			}
+			c++;
+		}
+		if (dir==0){
+			if (onIt){
+				scrollToAnchor(anchorlist[index-2]);
+			} else {
+				scrollToAnchor(anchorlist[index-1]);
+			}
+		} else {
+			scrollToAnchor(anchorlist[index]);
+		}
+
+	}
+</script>
+</body>
