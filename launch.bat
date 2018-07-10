@@ -1,3 +1,3 @@
 @echo off
-py genTex.py
+py HTMLGenerator.py
 pause
